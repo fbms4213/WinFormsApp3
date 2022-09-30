@@ -49,7 +49,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(881, 31);
+            this.monthCalendar1.Location = new System.Drawing.Point(503, 82);
             this.monthCalendar1.Margin = new System.Windows.Forms.Padding(19, 22, 19, 22);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowTodayCircle = false;
@@ -62,7 +62,7 @@
             // 
             this.lbl_start_date.AutoSize = true;
             this.lbl_start_date.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_start_date.Location = new System.Drawing.Point(881, 215);
+            this.lbl_start_date.Location = new System.Drawing.Point(503, 266);
             this.lbl_start_date.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_start_date.Name = "lbl_start_date";
             this.lbl_start_date.Size = new System.Drawing.Size(94, 25);
@@ -73,7 +73,7 @@
             // 
             this.lbl_end_date.AutoSize = true;
             this.lbl_end_date.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_end_date.Location = new System.Drawing.Point(1021, 215);
+            this.lbl_end_date.Location = new System.Drawing.Point(643, 266);
             this.lbl_end_date.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbl_end_date.Name = "lbl_end_date";
             this.lbl_end_date.Size = new System.Drawing.Size(88, 25);
@@ -174,7 +174,7 @@
             // 
             this.lBox_Students_Copy.FormattingEnabled = true;
             this.lBox_Students_Copy.ItemHeight = 37;
-            this.lBox_Students_Copy.Location = new System.Drawing.Point(452, 391);
+            this.lBox_Students_Copy.Location = new System.Drawing.Point(695, 415);
             this.lBox_Students_Copy.Name = "lBox_Students_Copy";
             this.lBox_Students_Copy.Size = new System.Drawing.Size(247, 226);
             this.lBox_Students_Copy.TabIndex = 17;
@@ -184,7 +184,7 @@
             this.btn_move.AutoSize = true;
             this.btn_move.BackgroundImage = global::WinFormsApp3.Properties.Resources.icons8_arrow;
             this.btn_move.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_move.Location = new System.Drawing.Point(378, 500);
+            this.btn_move.Location = new System.Drawing.Point(503, 501);
             this.btn_move.Name = "btn_move";
             this.btn_move.Size = new System.Drawing.Size(68, 51);
             this.btn_move.TabIndex = 18;
@@ -198,7 +198,7 @@
             "Kia",
             "Bmw",
             "Mercedes"});
-            this.checkedListBox1.Location = new System.Drawing.Point(846, 364);
+            this.checkedListBox1.Location = new System.Drawing.Point(831, 21);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(279, 270);
             this.checkedListBox1.TabIndex = 19;
@@ -207,7 +207,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(846, 637);
+            this.label1.Location = new System.Drawing.Point(841, 305);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 37);
             this.label1.TabIndex = 20;
@@ -216,6 +216,7 @@
             // comboBox1
             // 
             this.comboBox1.DropDownHeight = 150;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
             this.comboBox1.Items.AddRange(new object[] {
@@ -227,6 +228,7 @@
             "Samsung",
             "Sony"});
             this.comboBox1.Location = new System.Drawing.Point(503, 12);
+            this.comboBox1.MaxDropDownItems = 5;
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(246, 45);
             this.comboBox1.Sorted = true;
@@ -258,7 +260,9 @@
             this.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             this.ResumeLayout(false);
             this.PerformLayout();
 
